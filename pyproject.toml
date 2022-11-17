@@ -1,0 +1,27 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "icd-spellcheck-de"
+version = "0.1.0"
+description = "Generate a spell check word list for medical terms based on the german translation of ICD-10"
+authors = ["d-k-bo <d-k-bo@mailbox.org>"]
+license = "MIT-0"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+
+[tool.poetry.scripts]
+icd-spellcheck-de = 'icd_spellcheck_de:app'
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = [
+    "E203",  # whitespace before ‘,’, ‘;’, or ‘:’ (incompatible with PEP8 and black)
+    "E501",  # line too long (to strict, use B950 instead)
+    "ANN10", # Missing type annotation for self/cls
+]
+extend-select = ["B950"] # line too long    
+docstring-convention = "google" # flake8-docstrings
