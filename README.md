@@ -17,4 +17,4 @@ pipx run --spec=git+https://github.com/d-k-bo/icd-spellcheck-de.git icd-spellche
 
 This project is licensed under the MIT No Attribution License. See [LICENSE](LICENSE) for more information.
 
-The generated word list is distributed according to BfArM's [Downloadbedingungen für die ICD-10-GM](Downloadbedingungen für die ICD-10-GM).
+The generated word list is distributed according to BfArM's [Downloadbedingungen für die ICD-10-GM](https://www.bfarm.de/SharedDocs/Downloads/DE/Kodiersysteme/klassifikationen/icd-10-gm/version2023/icd10gm2023alpha-txt_zip.html?cms_dlConfirm=true).
